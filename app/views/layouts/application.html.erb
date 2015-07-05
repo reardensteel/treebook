@@ -7,8 +7,34 @@
   <%= csrf_meta_tags %>
 </head>
 <body>
-
+	<style>
+body {background-color:darkgrey}
+h1 {color:darkblue}
+ul#menu {padding: 1px}
+ul#menu li{display:inline}
+ul#menu li a {background-color: black;color:white;padding:5px 30px; text-decoration: none;border-radius: 5px 5px 5px 5px}
+ul#menu li a:hover {background-color:green}
+</style>
+<h1 style="color:darkblue">Treebook</h1>
+<hr>
+<ul id="menu">
+	<li><a href="https://www.linkedin.com/profile/view?id=165023265&trk=nav_responsive_tab_profile" target="blank">About Us</a></li>
+	<li><a href="/html/default.asp" target="blank">Sales</a></li>
+	<li><a href="/css/default.asp" target = "blank">Media</a></li>
+	<li><a href="/php/default.asp"  target = "blank">Careers</a></li>
+	<li><a href="/js/default.asp"  target = "blank">Account Login</a></li>
+</ul>
+<hr>
+<br>
 <%= yield %>
-
+<br>
+<hr>
+<br>
+<address>
+&copy;James Kahmann<br>
+jkahm89@gmail.com<br>
+New Orleans, LA 70112<br>
+United States
+</address>
 </body>
 </html>
