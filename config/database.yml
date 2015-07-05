@@ -7,6 +7,8 @@
 default: &default
   # changed adapter from 'adapter: sqlite3' to 'adapter: postgresql' for Heroku
   adapter: postgresql
+  host: localhost
+  username: postgres
   pool: 5
   timeout: 5000
 
